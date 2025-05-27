@@ -10,7 +10,22 @@ Or watch it directly below:
 
 [![Watch the video](https://img.youtube.com/vi/OrttOR6UHtk/hqdefault.jpg)](https://youtu.be/OrttOR6UHtk)
 
+### 📸 Screenshots
 
+<p align="center">
+  <img src="./screenshots/Screenshot_2025-05-27_094620.png" width="45%" />
+  <img src="./screenshots/Screenshot_2025-05-27_094744.png" width="45%" />
+</p>
+<p align="center">
+  <img src="./screenshots/Screenshot_2025-05-27_094938.png" width="45%" />
+  <img src="./screenshots/Screenshot_2025-05-27_094948.png" width="45%" />
+</p>
+
+### 🎞️ Live Demo (GIF)
+
+<p align="center">
+  <img src="./screenshots/2025-05-2702-20-45-ezgif.com-video-to-gif-converter%20(2).gif" width="70%" />
+</p>
 ---
 
 ## Features
