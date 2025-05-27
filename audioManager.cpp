@@ -44,11 +44,35 @@ bool initAudio() {
     }
 
     PaStreamParameters inputParams;
-    inputParams.device = 5;
-    if (inputParams.device == paNoDevice) {
-        std::cerr << "No hay dispositivo de entrada." << std::endl;
+    //inputParams.device = 5; // INPUT INDEX IN MY CASE THE FOCUSTIRE IS 5
+    //if (inputParams.device == paNoDevice) {
+    //    std::cerr << "No hay dispositivo de entrada." << std::endl;
+    //    return false;
+    //}
+
+
+    int numDevices = Pa_GetDeviceCount();
+    if (numDevices < 0) {
+        std::cerr << "Error al obtener dispositivos: " << Pa_GetErrorText(numDevices) << std::endl;
         return false;
     }
+
+    int inputDeviceIndex = -1;
+    for (int i = 0; i < numDevices; ++i) {
+        const PaDeviceInfo* deviceInfo = Pa_GetDeviceInfo(i);
+        if (deviceInfo && deviceInfo->maxInputChannels > 0) {
+            inputDeviceIndex = i;
+            std::cout << "[Audio] Usando dispositivo de entrada: " << deviceInfo->name << std::endl;
+            break;
+        }
+    }
+
+    if (inputDeviceIndex == -1) {
+        std::cerr << "No se encontró un dispositivo de entrada válido." << std::endl;
+        return false;
+    }
+
+    inputParams.device = inputDeviceIndex;
 
     inputParams.channelCount = 1;
     inputParams.sampleFormat = paFloat32;
