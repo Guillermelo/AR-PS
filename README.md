@@ -4,8 +4,14 @@ This project is an interactive visual particle system that responds in real-time
 
 ## Demo
 
-> 📽️ Watch the demo video: [Demo Video](INSERT_LINK_HERE)  
-> *(Replace the above link with your actual video file, e.g., upload the `.mkv` to Google Drive or YouTube and share the public link.)*
+## 🎬 Demo
+
+> 📽️ Watch the demo on YouTube: [https://youtu.be/OrttOR6UHtk](https://youtu.be/OrttOR6UHtk)
+
+Or watch it directly below:
+
+[![Watch the video](https://img.youtube.com/vi/OrttOR6UHtk/hqdefault.jpg)](https://youtu.be/OrttOR6UHtk)
+
 
 ---
 
