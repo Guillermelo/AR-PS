@@ -66,31 +66,6 @@ Make sure to install or link the following:
 
 ---
 
-## Architecture
-
-+--------------------------+
-| PortAudio Input Stream   |
-+-----------+--------------+
-|
-v
-+--------------------------+
-| Audio Thread (RMS, FFT*) |
-+-----------+--------------+
-|
-v
-+-----------------------------+
-| Visual Behavior Assignment  |
-+-----------+-----------------+
-|
-v
-+-----------------------------+
-| OpenGL Instanced Particles  |
-| + Bloom Post-processing |    
-+-----------------------------+
-
-
----
-
 ## Notes
 
 - The system uses RMS (root mean square) for basic energy analysis.
