@@ -4,8 +4,6 @@ This project is an interactive visual particle system that responds in real-time
 
 ## Demo
 
-## 🎬 Demo
-
 > 📽️ Watch the demo on YouTube: [https://youtu.be/OrttOR6UHtk](https://youtu.be/OrttOR6UHtk)
 
 Or watch it directly below:
