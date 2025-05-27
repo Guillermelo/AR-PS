@@ -1,15 +1,15 @@
-# 🎧 Real-Time Audio Reactive Particle System (C++ / OpenGL)
+# Real-Time Audio Reactive Particle System (C++ / OpenGL)
 
 This project is an interactive visual particle system that responds in real-time to live audio input. It is built using **C++**, **OpenGL**, and **PortAudio**, and includes various audio-reactive particle behaviors enhanced with **post-processing bloom effects**.
 
-## 🎬 Demo
+## Demo
 
 > 📽️ Watch the demo video: [Demo Video](INSERT_LINK_HERE)  
 > *(Replace the above link with your actual video file, e.g., upload the `.mkv` to Google Drive or YouTube and share the public link.)*
 
 ---
 
-## 📦 Features
+## Features
 
 - Real-time audio capture using **PortAudio**
 - Fast particle updates using instancing (up to 500,000 particles)
@@ -24,7 +24,7 @@ This project is an interactive visual particle system that responds in real-time
 
 ---
 
-## 🛠️ Build Instructions
+## Build Instructions
 
 ### Dependencies
 
@@ -46,17 +46,8 @@ Make sure to install or link the following:
 
 ---
 
-## 🎮 Controls
 
-| Key | Action                        |
-|-----|-------------------------------|
-| `ESC` | Exit program                |
-| `M`   | Toggle mouse camera mode     |
-| `WASD` + `Space`/`Shift` | Move camera (in mouse mode) |
-
----
-
-## 📁 File Overview
+## File Overview
 
 | File | Purpose |
 |------|---------|
@@ -69,10 +60,10 @@ Make sure to install or link the following:
 
 ---
 
-## ⚙️ Architecture
+## Architecture
 
 +--------------------------+
-| PortAudio Input Stream |
+| PortAudio Input Stream   |
 +-----------+--------------+
 |
 v
@@ -82,34 +73,22 @@ v
 |
 v
 +-----------------------------+
-| Visual Behavior Assignment |
+| Visual Behavior Assignment  |
 +-----------+-----------------+
 |
 v
 +-----------------------------+
-| OpenGL Instanced Particles |
-| + Bloom Post-processing |
+| OpenGL Instanced Particles  |
+| + Bloom Post-processing |    
 +-----------------------------+
 
 
-
-(*FFT planned but not implemented yet.)
-
 ---
 
-## 📌 Notes
+## Notes
 
 - The system uses RMS (root mean square) for basic energy analysis.
 - Additional particle behaviors are modular and easily extendable.
 - Audio trigger thresholds are configurable from the source code.
 
 ---
-
-## 📄 License
-
-MIT License (or specify your own)
-
----
-
-Feel free to contribute or report issues.
-
